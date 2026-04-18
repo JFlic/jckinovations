@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCK Innovations</title>
+    <link rel="stylesheet" href="CSS/INdex.css">
+    <link rel="icon" href="Images/Links and Logos/JCK Icon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+      <img src="Images/Links and Logos/JCK Innovations logo.jpeg" load="lazy" alt="JCK Innovations">
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Products 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#EveryDrop">Every Drop</a>
+                <a href="#MiterBlock">Miter Block</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Gallery 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Gallary.html">Every Drop</a>
+                <a href="Gallary.html#MiterBlock">Miter Block</a>
+            </div>
+        </div>
+  </nav>
+    <section id="EveryDrop">
+        <h2 class="EveryDropHeader">Every Drop</h2>
+        <div class="product">
+            <img src="Images/EveryDropImg/upright.jpeg" load="lazy" alt="Every Drop Image" style="margin:10px">
+            <div class="product-details">
+                <h2>Universal Bottle Emptying Kit Transfer Connector for Soap, Lotion, Shampoo, Conditioner, Kitchen and Gargage</h2>
+                <p>Introducing Every Drop: The Ultimate Multi-Purpose Funnel!<br><br>
+
+                Say goodbye to waste and hello to savings with Every Drop, the innovative funnel that ensures you get the most out of every bottle. Perfect for your kitchen, bath, or garage, Every Drop fits most bottles and effortlessly marries two bottles together, minimizing waste and maximizing efficiency.
+                <br>
+                <br>
+                Key Features:
+                <br>
+                <br>
+                - <b>Reduces Waste</b>: Every Drop ensures no liquid is left behind.
+                <br>
+                <br>
+                - <b>Save Money</b>: By getting every last drop, you save more in the long run.
+                <br>
+                <br>
+                - <b>Universal Fit</b>: Designed to fit most bottles, making it versatile for various uses.
+                <br>
+                <br>
+                - <b>Dishwasher Safe</b>: Easy to clean and maintain, just toss it in the dishwasher.
+                <br>
+                <br>
+                - <b>Available in 3 Colors</b>: Choose white for the kitchen, blue for the bath, or black for the garage to match your space.
+                <br>
+                <br>
+                Experience convenience and sustainability with Every Drop, the funnel that makes every last drop count.</p>
+
+                <a href="https://www.amazon.com/Universal-Emptying-Connector-Conditioner-Condiments/dp/B09RTNPGQ4/ref=sr_1_3?crid=1KVDJG2Z2J65H&keywords=last+drop&qid=1704236283&sprefix=last+drop%2Caps%2C286&sr=8-3" target="_blank"><img src="Images/Links and Logos/buy-on-amazon-button-png-3.png" load="lazy"></a>
+                <a href="https://mystore.com/everydrop" target="_blank"><img src="Images/Links and Logos/My Store Link.jpg" load="lazy"></a>
+                <a href="https://www.walmart.com/ip/Empty-Every-Drop-Bottle-Liquid-Transfer/5638632063" target="_blank"><img src="Images/Links and Logos/Walmart-Logo.png" load="lazy"></a>
+              </div>
+        </div>
+
+        <!-- slider -->
+
+        <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Images/EveryDropImg/EDSkitchen.jpg" style="width: 100%;">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Images/EveryDropImg/bathSingle.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Images/EveryDropImg/Last Drop 2.jpeg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align: center;">
+              <img src="Images/EveryDropImg/EDSkitchen.jpg"class="dot" onclick="currentSlide(1)"> 
+              <img src="Images/EveryDropImg/bathSingle.jpg"class="dot" onclick="currentSlide(2)"> 
+              <img src="Images/EveryDropImg/Small Last Drop 2.jpeg"class="dot" onclick="currentSlide(3)"> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <br>
+
+    </section>
+
+    <br>
+    
+    <section id="EveryDrop">
+        <h2 class="EveryDropHeader">Every Drop 3 Pack Universal Bottle Emptying Kit</h2>
+        <div class="product">
+            <img src="Images/EveryDropImg/3Pack.jpeg" load="lazy" alt="Every Drop Image" class="MiterBlockImg" style="margin:10px">
+            <div class="product-details">
+                <h2>Universal Bottle Emptying Kit Transfer Connector for Soap, Lotion, Shampoo, Conditioner, Kitchen and Gargage</h2>
+                <p>Introducing Every Drop: The Ultimate Multi-Purpose Funnel!<br><br>
+
+                Say goodbye to waste and hello to savings with Every Drop, the innovative funnel that ensures you get the most out of every bottle. Perfect for your kitchen, bath, or garage, Every Drop fits most bottles and effortlessly marries two bottles together, minimizing waste and maximizing efficiency.
+                <br>
+                <br>
+                Key Features:
+                <br>
+                <br>
+                - <b>Reduces Waste</b>: Every Drop ensures no liquid is left behind.
+                <br>
+                <br>
+                - <b>Save Money</b>: By getting every last drop, you save more in the long run.
+                <br>
+                <br>
+                - <b>Universal Fit</b>: Designed to fit most bottles, making it versatile for various uses.
+                <br>
+                <br>
+                - <b>Dishwasher Safe</b>: Easy to clean and maintain, just toss it in the dishwasher.
+                <br>
+                <br>
+                - <b>Available in 3 Colors</b>: Choose white for the kitchen, blue for the bath, or black for the garage to match your space.
+                <br>
+                <br>
+                Experience convenience and sustainability with Every Drop, the funnel that makes every last drop count.</p>
+
+                <a href="https://www.amazon.com/JCK-Innovations-Universal-Conditioner-Condiments/dp/B0D8MZ8S5W/ref=sr_1_1?dib=eyJ2IjoiMSJ9.M_vpIwUGOysXlyzAgihliVd7KGMXmBsKBitJAEnH38c5b3oWZoXzODU0vcvMeulgCxJqytUOoyfWLYinItvMBA0vEO24Y1vlLhM2t1-XB1c50yokynVh1Mw35bhauCmm.Tu-azHyg0Rc61sU__7kM41-g9wyq3OkXFNPNJXwOttc&dib_tag=se&keywords=JCK+Innovations&qid=1757266920&sr=8-1" target="_blank"><img src="Images/Links and Logos/buy-on-amazon-button-png-3.png" load="lazy"></a>
+                <a href="https://mystore.com/everydrop" target="_blank"><img src="Images/Links and Logos/My Store Link.jpg" load="lazy"></a>
+                <a href="https://www.walmart.com/ip/JCK-Innovations-Plastic-Bottle-Liquid-Transfer-White-1pcs/7274668808" target="_blank"><img src="Images/Links and Logos/Walmart-Logo.png" load="lazy"></a>
+              </div>
+        </div>
+
+    </section>
+    
+    <br>
+
+    <section id="MiterBlock">
+
+      <h2 class="EveryDropHeader">Miter Block</h2>
+      <div class="product2">
+          <img src="Images/MiterBlockImg/MiterBlock.jpg" class="MiterBlockImg" alt="Miter Block Image">
+          <div class="product-details2">
+              <h2>Support Stand - 6 Adjustable Height Settings
+                 with 0.25" Riser - Heavy Duty & Light Rigid Plastic
+                  - Portable Brace for Miter Saws</h2>
+              <p>MITERBLOCK is a small, lightweight and inexpensive accessory 
+                for the DIYer and Handyman. Its unique shape gives a universal
+                 support heights that allow whatever material your cutting to 
+                 be supported level with your Miter saw deck at Any Length on 
+                 Any Surface. Great for use in the back yard, garage floor, 
+                 basements and more!</p>
+              <a href="https://www.amazon.com/Support-Universal-Portable-Material-Surface/dp/B07ND52L98" target="_blank"><img src="Images/Links and Logos/buy-on-amazon-button-png-3.png"></a>
+              <a href="https://mystore.com/miter-block-support-stand" target="_blank"><img src="Images/Links and Logos/My Store Link.jpg"></a>
+              <a href="https://www.lowes.com/pd/Miter-Block-Miter-Block/5014750779?idProductFound=false&idExtracted=true" target="_blank" style="margin-top: 50px"><img src="Images/Links and Logos/LowesLogo.png"></a>
+            </div>
+      </div>
+
+      <!-- slider -->
+
+      <div class="slideshow-container">
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Images/MiterBlockImg/P1040161.jpeg" style="width: 100%;">
+        </div>
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Images/MiterBlockImg/DSC_3787-Edit.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Images/MiterBlockImg/Project.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides1(-1)">❮</a>
+        <a class="next" onclick="plusSlides1(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align: center;">
+          <img src="Images/MiterBlockImg/P1040161.jpeg"class="dot1" onclick="currentSlide1(1)"> 
+          <img src="Images/MiterBlockImg/Small DSC_3787-Edit.jpeg"class="dot1" onclick="currentSlide1(2)"> 
+          <img src="Images/MiterBlockImg/Project.jpg"class="dot1" onclick="currentSlide1(3)">
+        </div>
+        
+        <script>
+          let slideIndex1 = 1;
+          showSlides1(slideIndex1);
+          
+          function plusSlides1(n) {
+            showSlides1(slideIndex1 += n);
+          }
+          
+          function currentSlide1(n) {
+            showSlides1(slideIndex1 = n);
+          }
+          
+          function showSlides1(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides1");
+            let dots = document.getElementsByClassName("dot1");
+            if (n > slides.length) {slideIndex1 = 1}    
+            if (n < 1) {slideIndex1 = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex1-1].style.display = "block";  
+            dots[slideIndex1-1].className += " active";
+          }
+        </script>
+        <br>
+    </section>
+    <footer>
+        &copy; 2026 JCK Innovations
+    </footer>
+</body>
+</html>
